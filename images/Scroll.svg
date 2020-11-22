@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="54.98" viewBox="0 0 117 54.98">
+  <defs>
+    <clipPath id="clip-Scroll">
+      <rect width="117" height="54.98"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll" clip-path="url(#clip-Scroll)">
+    <g id="Group_22" data-name="Group 22" transform="translate(-902 -1009)">
+      <g id="Group_3" data-name="Group 3" transform="translate(3440.5 2899.5)">
+        <line id="Line_1" data-name="Line 1" x2="18.984" y2="18.984" transform="translate(-2499.5 -1859.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+        <line id="Line_2" data-name="Line 2" x1="19.372" y2="18.984" transform="translate(-2480.516 -1859.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
+      </g>
+      <text id="MY_WORK" data-name="MY WORK" transform="translate(902 1028)" fill="#fff" font-size="24" font-family="Nunito-Regular, Nunito"><tspan x="0" y="0">MY WORK</tspan></text>
+    </g>
+  </g>
+</svg>
