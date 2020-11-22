@@ -85,9 +85,10 @@ h2 {
 /* CASE STUDY ONE */
 .case-study-1 {
     display: flex;
-    background-color: #dff8e8;
-    margin: 5%;
+    background: #DFF8E8 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #DFF8E866;
     border-radius: 20px;
+    margin: 5%;
     height: 642px;
 }
 .container {
@@ -139,12 +140,37 @@ button p {
     margin-left: 7%;
 }
 
-
-/* FOOTER */
-footer {
+/* CASE STUDY TWO */
+.case-study-2 {
     display: flex;
-    top: 100%;
-    height: 80px;
-    background: #FFFFFF;
-    box-shadow: 0px 3px 6px #00000029;
+    background: #A1CBD5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #A1CBD566;
+    border-radius: 20px;
+    margin: 5%;
+    height: 642px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column; 
+    max-width: 20%;
+    padding-left: 7%;
+    padding-top: 6%;
+}
+#title-2 {
+    text-align: left;
+    font: normal normal bold 80px/88px Oswald;
+    letter-spacing: 0px;
+    color: #000000;
+    text-shadow: 0px 3px 6px #00000029;
+    margin: 0;
+    padding-bottom: 7%;
+}
+#description-2 {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 7%;
+}
+#img-2 {
+    margin-left: 18%;
 }
