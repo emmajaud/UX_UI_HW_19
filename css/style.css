@@ -2,11 +2,9 @@ body {
     background-color: #1e1e1e;
 }
 
+/* NAV BAR */
 .nav {
     display: flex;
-    /* top: 0px;
-    left: 0px;
-    width: 1920px;*/
     height: 80px;
     background: #FFFFFF;
     box-shadow: 0px 3px 6px #00000029;
