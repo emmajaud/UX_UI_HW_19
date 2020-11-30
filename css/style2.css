@@ -2,6 +2,18 @@ body {
     background-color: #1e1e1e;
 }
 
+/*hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-style: outset;
+    border-width: 1px;
+    border-color: #1e1e1e;
+    box-shadow: 0px 3px 6px #1e1e1e29;
+  } 
+*/
 /* NAV BAR */
 #nav {
     display: flex;
@@ -45,7 +57,7 @@ body {
 .intro {
     display: grid;
     min-width: 500px;
-    height: 100vh;
+    height: 90vh;
     grid-template-columns: 50% 50%;
     grid-template-areas: "introContent image";
 }
@@ -95,6 +107,63 @@ h2 {
     right: 46.5%;
     
 }
+
+/* SKILLS */
+#skillTitle {
+    padding: 2%;
+    color: #e1cbf1;
+    font: normal normal bold 45px/45px Oswald;
+    text-shadow: 0px 3px 6px #00000029;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "wireframe prototype dev";
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#wireframeSkill {
+    grid-area: wireframe;
+}
+#prototypeSkill {
+    grid-area: prototype;
+}
+#devSkill {
+    grid-area: dev;
+}
+.skillContent {
+    padding: 8%;
+    display: block;
+    color: white;
+}
+.skillHeading {
+    font: normal normal bold 32px/32px Oswald;
+    color: #e1cbf1;
+    text-shadow: 0px 3px 6px #00000029;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.skillDescription {
+    font: normal normal 18px/24px Nunito;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%
+}
+#skillDescription2 {
+    padding-top: 2%
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+
 
 /* CASE STUDY ONE */
 .case-study-1 {
@@ -216,3 +285,36 @@ button p {
     color: #000000;
     text-decoration: none;
 }
+
+
+/* MEDIA QUERY 
+@media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+    #heroGrid {
+      grid-template-areas: 
+        "featuredProduct featuredProduct"
+        "secondaryProduct CTA";
+    }
+    #categoryGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "bookcases"
+        "bedroom"
+        "patio"
+        "couches"
+        "desks";
+    }
+  }
+  */
