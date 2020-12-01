@@ -14,6 +14,8 @@ body {
     box-shadow: 0px 3px 6px #1e1e1e29;
   } 
 */
+
+
 /* NAV BAR */
 #nav {
     display: flex;
@@ -21,6 +23,7 @@ body {
     height: 80px;
     background: #FFFFFF;
     box-shadow: 0px 3px 6px #00000029;
+    z-index: 100000;
     width: 100%;
     top: 0;
 }
@@ -67,10 +70,6 @@ h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
 }
-#product_designer {
-    display: inline-block;
-    white-space: nowrap;
-}
 h2 {
     margin: 0;
     font-weight: 350;
@@ -102,11 +101,16 @@ h2 {
 
 #me {
     grid-area: image;
-    padding: 10%;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;  
+    justify-content: flex-end;
+    
 }
+#me_img {
+    width: 476px;
+    padding: 10%;
+}
+/*
 #scroll {
     position: absolute;
     z-index: 1000;
@@ -114,8 +118,12 @@ h2 {
     justify-content: center;
     align-items: center;
     top: 675px;
-    right: 46.5%;
-    
+    right: 46.5%;  
+}*/
+.fix {
+    position: absolute;
+    bottom:8px;
+    right: 46.5%;  
 }
 
 /* SKILLS */
@@ -171,9 +179,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
+    height: 126px;
 }
-
-
 
 /* CASE STUDY ONE */
 .case-study-1 {
@@ -234,6 +241,7 @@ button p {
 #img-1 {
     grid-area: image1;
     padding-top: 7%;
+    width: 700px;
 }
 
 /* CASE STUDY TWO */
@@ -273,6 +281,7 @@ button p {
     grid-area: image2;
     padding-left: 15%;
     padding-top: 5%;
+    width: 550px;
 
 }
 
@@ -297,7 +306,500 @@ button p {
 }
 
 
-/* MEDIA QUERY 
+/* MEDIA QUERY */
+@media only screen and (max-width: 1250px) {
+    /* CASE STUDY ONE */
+    .case-study-1 {
+        height: 450px;
+    }
+    #title-1 {
+        font: normal normal bold 64px/68px Oswald;
+    }
+    #catch-line {
+        font: normal normal 28px/54px Oswald;
+    }
+    #description-1 {
+        font-size: 18px;
+    }
+    button {
+        width: 232px;
+        height: 50px;
+    }
+    button p {
+        font-size: 18px;
+    }
+    #img-1 {
+        width: 650px;
+    }
+
+    /* CASE STUDY TWO */
+    .case-study-2 {
+        height: 450px;
+    }
+    #title-2 {
+        font: normal normal bold 64px/68px Oswald;
+    }
+    #description-2 {
+        font-size: 18px;
+    }
+    #img-2 {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #img-1 {
+        width: 600px;
+    }
+    #img-2 {
+        width: 450px;
+        padding-top: 7%;
+        vertical-align: middle;
+    }
+}
+@media only screen and (max-width: 1145px) {
+    h1 {
+        font-size: 88px;
+    }
+    h2 {
+        font-size: 42px;        
+    }
+    #design_icon {
+        width: 60px;
+    }
+    #description {
+        margin-top: 2%;
+        font-size: 24px;    
+    }
+    #me_img {
+        padding: 8%;
+    }
+
+    /* CASE STUDY ONE */
+    #title-1 {
+        padding-bottom: 3%;
+    }
+    #catch-line {
+        font: normal normal 26px/54px Oswald;
+    }
+    #description-1 {
+        font-size: 17px;
+    }
+    button {
+        width: 232px;
+        height: 50px;
+    }
+    button p {
+        font-size: 18px;
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    #img-1 {
+        width: 575px;
+        padding-top: 8%;
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 38%;
+    }
+}
+@media only screen and (max-width: 1085px) {
+    #me_img {
+        width: 450px;
+    }
+    #img-1 {
+        width: 565px;
+        padding-top: 9%;
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    #catch-line {
+        font: normal normal 26px/54px Oswald;
+    }
+    #description-1 {
+        font-size: 16px;
+    }
+    #img-1 {
+        width: 555px;
+        padding-top: 10%;
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 40%;
+    }
+}
+@media only screen and (max-width: 1010px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 40px;        
+    }
+    #design_icon {
+        width: 55px;
+    }
+    #description {
+        margin-top: 2%;
+        font-size: 22px;    
+    }
+    #me_img {
+        width: 400px;
+    }
+
+    #img-1 {
+        width: 540px;
+    }
+    button {
+        width: 200px;
+        height: 45px;
+    }
+    button p {
+        font-size: 16px;
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 40%;
+    }
+}
+@media only screen and (max-width: 990px) {
+    #img-1 {
+        width: 520px;
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 40%;
+    }
+
+}
+@media only screen and (max-width: 915px) {
+    h1 {
+        font-size: 78px;
+    }
+    h2 {
+        font-size: 38px;        
+    }
+    #design_icon {
+        width: 50px;
+    }
+    #description {
+        margin-top: 3%;
+        font-size: 20px;    
+    }
+    .icons {
+        margin-top: 4%;
+        max-width: 40%;
+    }
+    #me_img {
+        padding: 10%;
+        width: 370px;
+    }
+    #img-1 {
+        width: 500px;
+        padding-top: 15%;
+    }
+    .center {
+        height: 112px;
+    }
+    #title-1 {
+        font: normal normal bold 60px/62px Oswald;
+        padding-top: 25%;
+    }
+    #catch-line {
+        font: normal normal 22px/54px Oswald;
+    }
+    #description-1 {
+        font-size: 15px;
+    }
+    button {
+        width: 200px;
+        height: 45px;
+    }
+    button p {
+        font-size: 18px;
+    }
+    #title-2 {
+        font: normal normal bold 60px/64px Oswald;
+        padding-top: 25%;
+    }
+    #description-2 {
+        font-size: 17px;
+    }
+    #img-2 {
+        width: 400px;
+        padding-top: 12%;
+    }
+
+}
+@media only screen and (max-width: 895px) {
+    h1 {
+        font-size: 75px;
+    }
+    #me_img {
+        width: 350px;
+        padding: 11%;
+    }
+}
+@media only screen and (max-width: 865px) {
+    h1 {
+        font-size: 72px;
+    }
+    #img-1 {
+        width: 450px;
+        padding-top: 15%;
+    }
+    #title-1 {
+        padding-top: 15%;
+    }
+    .case-study-1 {
+        grid-template-columns: 38% 62%;
+        height: 425px;
+    }
+    #title-2 {
+        font: normal normal bold 56px/64px Oswald;
+        padding-top: 25%;
+    }
+    .case-study-2 {
+        height: 425px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    h1 {
+        font-size: 68px;
+    }
+    #me_img {
+        width: 325px;
+        padding: 11%;
+    }
+    #img-1 {
+        padding-top: 20%;
+        width: 400px;
+    }
+    .case-study-1 {
+        grid-template-columns: 40% 60%;
+        height: 425px;
+    }
+    #img-2 {
+        width: 350px;
+        padding-left: 20%;
+        padding-top: 15%;
+    }
+    #title-2 {
+        padding-top: 22%;
+        font: normal normal bold 54px/62px Oswald;
+    }
+
+    .skillDescription {
+        font: normal normal 16px/22px Nunito;
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%
+    }
+    .skillHeading {
+        font: normal normal bold 32px/32px Oswald;
+
+    }
+
+}
+@media only screen and (max-width: 785px) {
+    #img-2 {
+        padding-left: 18%;
+    }
+    #title-2 {
+        font: normal normal bold 50px/62px Oswald;
+    }
+}
+@media only screen and (max-width: 782px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    /* INTRO CONTENT */
+    .intro {
+        display: grid;
+        min-width: 500px;
+        height: 90vh;
+        grid-template-rows: 35% 65%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "introContent";
+    }
+    h1 {
+        margin-top: 0%;
+        font-size: 60px;
+        text-align: left;
+    }
+    h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    #description {
+        margin-top: 4%;
+        font-size: 22px;
+    }
+    #design_icon {
+        margin-left: 2%;
+        width: 40px;
+    }
+    .icons {
+        margin-top: 5%;
+        max-width: 35%;
+    }
+
+    #me {
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        
+    }
+    #me_img {
+        padding: 5%;
+        width: 250px;
+    }
+    .fix {
+        display: none;
+    }
+
+    /* SKILLS */
+    #skillTitle {
+        font: normal normal bold 38px/45px Oswald;
+    }
+    #skills {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "wireframe" "prototype" "dev";
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #wireframeSkill {
+        grid-area: wireframe;
+
+    }
+    #prototypeSkill {
+        grid-area: prototype;
+        padding-top: 2%;
+    }
+    #devSkill {
+        grid-area: dev;
+        padding-top: 8%;
+    }
+    .skillContent {
+        padding: 4%;
+        padding-bottom: 0%;
+        display: block;
+        color: white;
+    }
+    .skillHeading {
+        font: normal normal bold 32px/32px Oswald;
+
+    }
+    .skillDescription {
+        font: normal normal 18px/24px Nunito;
+        text-align: center;
+        padding-left: 4%;
+        padding-right: 4%
+    }
+
+
+    /* CASE STUDY ONE */
+    .case-study-1 {
+        display: grid;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image1" "container1" ;
+        background: #DFF8E8 0% 0% no-repeat padding-box;
+        height: 650px;
+    }
+    .container {
+        padding-left: 10%;
+    }
+    #title-1 {
+        padding-top: 6%;
+        font: normal normal bold 60px/62px Oswald;
+        text-align: center;
+        padding-right: 10%;
+        text-decoration: underline;
+    }
+    #catch-line {
+        font: normal normal 28px/54px Oswald;
+    }
+    #description-1 {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        font-size: 18px;
+        padding-bottom: 7%;
+        padding-right: 10%;
+    }
+    button {
+        width: 200px;
+        height: 45px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    button p {
+        font-size: 18px;
+ 
+
+    }
+    #img-1 {
+        width: 400px;
+        padding-top: 8%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* CASE STUDY TWO */
+    .case-study-2 {
+        display: grid;
+        grid-template-rows: 45% 55%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image2" "container2" ;
+        height: 650px;
+        box-shadow: 0px 3px 6px #A1CBD566;
+    }
+    .container2 {
+        padding-left: 10%;
+    }
+    #title-2 {
+        padding-top: 6%;
+        font: normal normal bold 60px/62px Oswald;
+        text-align: center;
+        padding-right: 10%;
+        text-decoration: underline;
+    }
+    #description-2 {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        font-size: 18px;
+        padding-bottom: 7%;
+        padding-right: 10%;
+    }
+    #img-2 {
+        padding-left: 0%;
+        width: 350px;
+        padding-top: 8%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+/*
 @media only screen and (max-width: 1000px) {
     #navigation {
       display: none;
@@ -327,4 +829,51 @@ button p {
         "desks";
     }
   }
+
+
+
+  .case-study-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "image1"
+        "container1" ;
+    background: #DFF8E8 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #DFF8E866;
+    border-radius: 20px;
+    margin: 5%;
+    height: 800px;
+}
+#title-1 {
+    padding-top: 0%;
+    text-align: left;
+    padding-bottom: 5%;
+}
+#catch-line {
+    margin: 0;
+    padding-bottom: 2%;
+}
+#description-1 {
+
+}
+button {
+    width: 264px;
+    height: 56px;
+    background: #1A1A1A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+#img-1 { 
+    transform: translate(28%, 0%);
+    z-index: 0;
+    padding-top: 5%;
+}
   */
