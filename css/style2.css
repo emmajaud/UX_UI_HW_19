@@ -243,6 +243,7 @@ button p {
     grid-area: image1;
     padding-top: 7%;
     width: 700px;
+    cursor: pointer;
 }
 
 /* CASE STUDY TWO */
@@ -283,7 +284,7 @@ button p {
     padding-left: 15%;
     padding-top: 5%;
     width: 550px;
-
+    cursor: pointer;
 }
 
 /* FOOTER */
