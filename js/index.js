@@ -1,6 +1,12 @@
 // UI Interactions
 console.log("this works")
 
+// SCROLL TO TOP
+$("#logo").click(function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log("logo was clicked")
+});
+
 
 // HOVER STATES
 $(".workHover").hover(function() {
