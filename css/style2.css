@@ -1,6 +1,7 @@
 body {
     background-color: #1e1e1e;
     max-width: 1280px;
+    margin: auto;
 }
 
 /*hr { 
@@ -62,7 +63,7 @@ body {
 .intro {
     display: grid;
     min-width: 500px;
-    height: 90vh;
+    height: 720px;
     grid-template-columns: 50% 50%;
     grid-template-areas: "introContent image";
 }
@@ -124,8 +125,12 @@ h2 {
 }*/
 .fix {
     position: absolute;
-    bottom:8px;
-    right: 46.5%;  
+    bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
 }
 
 /* SKILLS */
@@ -310,6 +315,29 @@ button p {
 
 
 /* MEDIA QUERY */
+@media only screen and (min-width: 1280px){
+    
+
+}
+/*
+@media only screen and (min-height: 730px){
+    .fix {
+        position: fixed;
+        top:700px;
+        left: 46.5%;
+        max-width: 1280px; 
+        max-height: 720px;
+    }
+}
+@media only screen and (max-height: 710px){
+    .fix {
+        position: absolute;
+        bottom:8px;
+        left: 46.5%;
+        max-width: 1280px; 
+        max-height: 720px;
+    }
+}*/
 @media only screen and (max-width: 1250px) {
     /* CASE STUDY ONE */
     .case-study-1 {
