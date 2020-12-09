@@ -16,7 +16,10 @@ body {
     box-shadow: 0px 3px 6px #1e1e1e29;
   } 
 */
-
+hr {
+    display: none;
+    top: 700px;
+}
 
 /* NAV BAR */
 #nav {
@@ -63,7 +66,7 @@ body {
 .intro {
     display: grid;
     min-width: 500px;
-    height: 720px;
+    height: 680px;
     grid-template-columns: 50% 50%;
     grid-template-areas: "introContent image";
 }
@@ -130,7 +133,7 @@ h2 {
     margin-right: auto;
     left: 0;
     right: 0;
-
+    z-index: 100;
 }
 
 /* SKILLS */
@@ -319,16 +322,17 @@ button p {
     
 
 }
-/*
+
 @media only screen and (min-height: 730px){
     .fix {
-        position: fixed;
-        top:700px;
-        left: 46.5%;
-        max-width: 1280px; 
-        max-height: 720px;
+        display: none;
+
+    }
+    .intro{
+        height: 620px;
     }
 }
+/*
 @media only screen and (max-height: 710px){
     .fix {
         position: absolute;
